@@ -17,7 +17,7 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('api',PostListView.as_view()),
     path('<int:pk>/api',PostView.as_view()),
-    path('signup/api', register_view, name='signup'),
+    path('signup/api', register_view, name='signup_api'),
     # path('<int:pk>/api',PostRetriveView.as_view()),
     # path('<int:pk>/update/api',PostUpdateView.as_view()),
     # path('<int:pk>/delete/api',PostDeleteView.as_view()),
