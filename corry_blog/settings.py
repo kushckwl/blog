@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-from .local import *
 
 
 # Application definition
@@ -113,6 +112,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'kusumsikhwal44@gmail.com'
 EMAIL_HOST_PASSWORD  = 'yhdxsvbboxuhtrka'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 # Default primary key field type
